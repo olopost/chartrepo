@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  nginx-s3:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-01-28T14:47:23.216276+01:00"
+    description: Nginx S3 gateway
+    digest: 5e40a7438f1c22425e71065baab314a9584b73aa7c148816f62bd0fd79f4da0f
+    name: nginx-s3
+    type: application
+    urls:
+    - nginx-s3-gateway/nginx-s3-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-01-28T14:47:23.215669+01:00"
