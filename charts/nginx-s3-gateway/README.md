@@ -1,29 +1,4 @@
-# nginx-s3-gateway-chart
-
-This chart deploy Nginx S3 gateway with customizable configuration
-
-## How to add this helm repository
-
-``` sh
-helm repo add olopost https://olopost.github.io/nginx-s3-gateway-chart
-```
-
-to verify you can type the following command
-
-``` console
-$ helm repo list
-
-NAME         	URL
-olopost      	https://olopost.github.io/nginx-s3-gateway-chart
-```
-
-## To deploy the helm
-
-``` sh
-helm install nginx-s3 olopost/nginx-s3 -f values.yaml
-```
-
-# nginx-s3 helm chart doc
+# nginx-s3
 
 ![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.16.0](https://img.shields.io/badge/AppVersion-1.16.0-informational?style=flat-square)
 
