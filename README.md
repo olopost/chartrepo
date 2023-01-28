@@ -1,4 +1,5 @@
 # nginx-s3-gateway-chart
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/olopost)](https://artifacthub.io/packages/search?repo=olopost)
 
 This chart deploy Nginx S3 gateway with customizable configuration
 
