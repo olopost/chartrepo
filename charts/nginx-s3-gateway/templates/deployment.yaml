@@ -46,7 +46,7 @@ spec:
             value: "{{ .Values.nginx.s3.region }}"
           - name: S3_STYLE
             value: "{{ .Values.nginx.s3.style }}"
-          - name: S3_DEBUG
+          - name: DEBUG
             value: "{{ .Values.nginx.s3.debug }}"
           - name: ALLOW_DIRECTORY_LIST
             value: "{{ .Values.nginx.s3.allowDirectoryListing }}"
