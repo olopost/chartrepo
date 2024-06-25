@@ -1,0 +1,26 @@
+# nginx-s3-gateway-chart
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/olopost)](https://artifacthub.io/packages/search?repo=olopost)
+
+This chart deploy Nginx S3 gateway with customizable configuration
+
+## How to add this helm repository
+
+``` sh
+helm repo add olopost https://olopost.github.io/nginx-s3-gateway-chart
+```
+
+to verify you can type the following command
+
+``` console
+$ helm repo list
+
+NAME         	URL
+olopost      	https://olopost.github.io/nginx-s3-gateway-chart
+```
+
+## To deploy the helm
+
+``` sh
+helm install nginx-s3 olopost/nginx-s3 -f values.yaml
+```
+
