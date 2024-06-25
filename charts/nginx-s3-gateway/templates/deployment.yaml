@@ -32,9 +32,9 @@ spec:
           env:
           - name: S3_BUCKET_NAME
             value: "{{ .Values.nginx.s3.bucketName }}"
-          - name: S3_ACCESS_KEY_ID
+          - name: AWS_ACCESS_KEY_ID
             value: "{{ .Values.nginx.s3.accessKey }}"
-          - name: S3_SECRET_KEY
+          - name: AWS_SECRET_ACCESS_KEY
             value: "{{ .Values.nginx.s3.secretKey }}"
           - name: S3_SERVER
             value: "{{ .Values.nginx.s3.server.host }}"
@@ -42,7 +42,7 @@ spec:
             value: "{{ .Values.nginx.s3.server.port }}"
           - name: S3_SERVER_PROTO
             value: "{{ .Values.nginx.s3.server.proto }}"
-          - name: S3_REGION
+          - name: AWS_REGION
             value: "{{ .Values.nginx.s3.region }}"
           - name: S3_STYLE
             value: "{{ .Values.nginx.s3.style }}"

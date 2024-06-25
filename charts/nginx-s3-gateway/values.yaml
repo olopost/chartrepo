@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/nginxinc/nginx-s3-gateway/nginx-oss-s3-gateway
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest-20230110"
+  tag: "latest-20240624"
 
 imagePullSecrets: []
 nameOverride: ""
