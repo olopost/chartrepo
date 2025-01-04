@@ -26,7 +26,7 @@ helm install nginx-s3 olopost/nginx-s3 -f values.yaml
 
 # nginx-s3
 
-![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest-20240624](https://img.shields.io/badge/AppVersion-latest--20240624-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest-20241230](https://img.shields.io/badge/AppVersion-latest--20241230-informational?style=flat-square)
 
 Nginx S3 gateway
 
@@ -42,7 +42,7 @@ Nginx S3 gateway
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"ghcr.io/nginxinc/nginx-s3-gateway/nginx-oss-s3-gateway"` |  |
-| image.tag | string | `"latest-20240624"` |  |
+| image.tag | string | `"latest-20241230"` |  |
 | imagePullSecrets | list | `[]` |  |
 | ingress.annotations | object | `{}` |  |
 | ingress.className | string | `""` |  |
@@ -55,6 +55,7 @@ Nginx S3 gateway
 | nginx.s3.accessKey | string | `"access"` |  |
 | nginx.s3.allowDirectoryListing | bool | `false` |  |
 | nginx.s3.awsSigsVersion | int | `4` |  |
+| nginx.s3.awsregion | string | `"fra"` |  |
 | nginx.s3.bucketName | string | `"name"` |  |
 | nginx.s3.debug | bool | `false` |  |
 | nginx.s3.provideIndexPage | bool | `false` |  |

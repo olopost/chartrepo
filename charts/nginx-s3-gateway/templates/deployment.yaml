@@ -43,6 +43,8 @@ spec:
           - name: S3_SERVER_PROTO
             value: "{{ .Values.nginx.s3.server.proto }}"
           - name: AWS_REGION
+            value: "{{ .Values.nginx.s3.awsregion }}"
+          - name: S3_REGION
             value: "{{ .Values.nginx.s3.region }}"
           - name: S3_STYLE
             value: "{{ .Values.nginx.s3.style }}"
