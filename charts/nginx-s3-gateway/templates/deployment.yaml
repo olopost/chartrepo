@@ -30,32 +30,61 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           env:
+          {{- with .Values.nginx.s3.bucketName }}
           - name: S3_BUCKET_NAME
-            value: "{{ .Values.nginx.s3.bucketName }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.accessKey }}
           - name: AWS_ACCESS_KEY_ID
-            value: "{{ .Values.nginx.s3.accessKey }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.secretKey }}
           - name: AWS_SECRET_ACCESS_KEY
-            value: "{{ .Values.nginx.s3.secretKey }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.server.host }}
           - name: S3_SERVER
-            value: "{{ .Values.nginx.s3.server.host }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.server.port }}
           - name: S3_SERVER_PORT
-            value: "{{ .Values.nginx.s3.server.port }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.server.proto }}
           - name: S3_SERVER_PROTO
-            value: "{{ .Values.nginx.s3.server.proto }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.awsregion }}
           - name: AWS_REGION
-            value: "{{ .Values.nginx.s3.awsregion }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.region }}
           - name: S3_REGION
-            value: "{{ .Values.nginx.s3.region }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.style }}
           - name: S3_STYLE
-            value: "{{ .Values.nginx.s3.style }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.debug }}
           - name: DEBUG
-            value: "{{ .Values.nginx.s3.debug }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.allowDirectoryListing }}
           - name: ALLOW_DIRECTORY_LIST
-            value: "{{ .Values.nginx.s3.allowDirectoryListing }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.provideIndexPage }}
           - name: PROVIDE_INDEX_PAGE
-            value: "{{ .Values.nginx.s3.provideIndexPage }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.s3.awsSigsVersion }}
           - name: AWS_SIGS_VERSION
-            value:  "{{ .Values.nginx.s3.awsSigsVersion }}"
+            value: "{{ . }}"
+          {{ end }}
+          {{- with .Values.nginx.extraEnvs }}
+            {{ . | toYaml | nindent 10 }}
+          {{- end }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
