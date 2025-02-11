@@ -82,6 +82,10 @@ tolerations: []
 affinity: {}
 
 nginx:
+  extraEnvs: []
+  ### Required for IRSA: https://github.com/nginxinc/nginx-s3-gateway/blob/main/docs/getting_started.md#running-on-eks-with-iam-roles-for-service-accounts
+  # - name: JS_TRUSTED_CERT_PATH
+  #   value: "/etc/ssl/certs/Amazon_Root_CA_1.pem"
   s3:
     bucketName: name
     accessKey: access
