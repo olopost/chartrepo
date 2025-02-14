@@ -3,9 +3,19 @@ entries:
   nginx-s3:
   - apiVersion: v2
     appVersion: latest-20241230
-    created: "2025-02-11T17:32:55.379873+01:00"
+    created: "2025-02-14T07:20:11.075288+01:00"
     description: Nginx S3 gateway
-    digest: 186bafd5add5ecf047981288d236fc6c0cb8c75e845529b9026abfb12f9a1e9a
+    digest: e4f5e94202c365173a0abf863b01d7a87a0d6759158399e3547d024ad16199a3
+    name: nginx-s3
+    type: application
+    urls:
+    - nginx-s3-gateway/nginx-s3-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: latest-20241230
+    created: "2025-02-14T07:20:11.075022+01:00"
+    description: Nginx S3 gateway
+    digest: 94ec84d22932299381b3b94adcb2ff9914a7c6e131cbddbba177dad213e663ee
     name: nginx-s3
     type: application
     urls:
@@ -13,7 +23,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: latest-20241230
-    created: "2025-02-11T17:32:55.379627+01:00"
+    created: "2025-02-14T07:20:11.074757+01:00"
     description: Nginx S3 gateway
     digest: bb91480f59b26bf04e17a65cc49d254ef527369b1ca87fcf9f2eb9cac8b56483
     name: nginx-s3
@@ -23,7 +33,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: latest-20240624
-    created: "2025-02-11T17:32:55.379221+01:00"
+    created: "2025-02-14T07:20:11.074491+01:00"
     description: Nginx S3 gateway
     digest: 23385deaed130e13d613757c3e80907297f8ddb7fe427f8d5c0e9dcbdcabdc1f
     name: nginx-s3
@@ -33,7 +43,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: latest-20240624
-    created: "2025-02-11T17:32:55.378793+01:00"
+    created: "2025-02-14T07:20:11.07421+01:00"
     description: Nginx S3 gateway
     digest: 9e7637ee930db6bd15367c6568ef502d1b5e1bfe2a3f60bdeeed4008ca62d6e5
     name: nginx-s3
@@ -43,7 +53,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: latest-20240624
-    created: "2025-02-11T17:32:55.378375+01:00"
+    created: "2025-02-14T07:20:11.073939+01:00"
     description: Nginx S3 gateway
     digest: 8fa36492d13caf8ceec370777afd8e2fd83024cc99aa58e85383a8ecd2c8a2c9
     name: nginx-s3
@@ -53,7 +63,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-11T17:32:55.377942+01:00"
+    created: "2025-02-14T07:20:11.073665+01:00"
     description: Nginx S3 gateway
     digest: dfe793caf3ec679c0c55f5119036913110b5e5b84d7b2cfc538d0a695b6e7c2d
     name: nginx-s3
@@ -63,7 +73,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-11T17:32:55.377524+01:00"
+    created: "2025-02-14T07:20:11.073392+01:00"
     description: Nginx S3 gateway
     digest: 9b961824507f5d27fc73a47ed06af52ddcc217fc35ffb9c6b2570c412a3f72cb
     name: nginx-s3
@@ -71,4 +81,4 @@ entries:
     urls:
     - nginx-s3-gateway/nginx-s3-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-11T17:32:55.376515+01:00"
+generated: "2025-02-14T07:20:11.073039+01:00"

@@ -26,7 +26,7 @@ helm install nginx-s3 olopost/nginx-s3 -f values.yaml
 
 # nginx-s3
 
-![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest-20241230](https://img.shields.io/badge/AppVersion-latest--20241230-informational?style=flat-square)
+![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest-20241230](https://img.shields.io/badge/AppVersion-latest--20241230-informational?style=flat-square)
 
 Nginx S3 gateway
 
@@ -52,6 +52,7 @@ Nginx S3 gateway
 | ingress.hosts[0].paths[0].pathType | string | `"ImplementationSpecific"` |  |
 | ingress.tls | list | `[]` |  |
 | nameOverride | string | `""` |  |
+| nginx.extraEnvs | list | `[]` |  |
 | nginx.s3.accessKey | string | `"access"` |  |
 | nginx.s3.allowDirectoryListing | bool | `false` |  |
 | nginx.s3.awsSigsVersion | int | `4` |  |
