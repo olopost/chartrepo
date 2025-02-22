@@ -70,10 +70,8 @@ spec:
           - name: DEBUG
             value: "{{ . }}"
           {{ end }}
-          {{- with .Values.nginx.s3.allowDirectoryListing }}
           - name: ALLOW_DIRECTORY_LIST
-            value: "{{ . }}"
-          {{ end }}
+            value: "{{ .Values.nginx.s3.allowDirectoryListing }}"
           {{- with .Values.nginx.s3.provideIndexPage }}
           - name: PROVIDE_INDEX_PAGE
             value: "{{ . }}"
