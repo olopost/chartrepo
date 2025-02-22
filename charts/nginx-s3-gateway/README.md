@@ -1,6 +1,6 @@
 # nginx-s3
 
-![Version: 0.1.9](https://img.shields.io/badge/Version-0.1.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest-20250217](https://img.shields.io/badge/AppVersion-latest--20250217-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest-20250217](https://img.shields.io/badge/AppVersion-latest--20250217-informational?style=flat-square)
 
 Nginx S3 gateway
 
@@ -13,6 +13,7 @@ Nginx S3 gateway
 | autoscaling.maxReplicas | int | `100` |  |
 | autoscaling.minReplicas | int | `1` |  |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
+| containerPort | int | `8080` |  |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"ghcr.io/nginxinc/nginx-s3-gateway/nginx-oss-s3-gateway"` |  |

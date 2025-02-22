@@ -40,6 +40,9 @@ service:
   type: ClusterIP
   port: 80
 
+# Nginx 80 / Nginx unprivileged 8080
+containerPort: 8080
+
 ingress:
   enabled: false
   className: ""
