@@ -93,11 +93,11 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /
+              path: /health
               port: {{ .Values.containerPort }}
           readinessProbe:
             httpGet:
-              path: /
+              path: /health
               port: {{ .Values.containerPort }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}

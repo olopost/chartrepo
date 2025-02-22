@@ -26,7 +26,7 @@ helm install nginx-s3 olopost/nginx-s3 -f values.yaml
 
 # nginx-s3
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest-20250217](https://img.shields.io/badge/AppVersion-latest--20250217-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest-20250217](https://img.shields.io/badge/AppVersion-latest--20250217-informational?style=flat-square)
 
 Nginx S3 gateway
 
